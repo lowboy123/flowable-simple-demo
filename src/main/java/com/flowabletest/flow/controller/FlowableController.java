@@ -1,5 +1,6 @@
 package com.flowabletest.flow.controller;
 
+import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
 import org.flowable.engine.ProcessEngine;
@@ -21,7 +22,7 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@ApiOperation("flowable的基本操作接口")
+@Api("flowable的基本操作接口")
 @RequestMapping("/flowable")
 @RefreshScope
 public class FlowableController {
